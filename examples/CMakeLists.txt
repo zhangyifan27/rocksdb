@@ -3,6 +3,11 @@ add_executable(simple_example
 target_link_libraries(simple_example
   ${ROCKSDB_LIB})
 
+add_executable(backup_example
+  backup_example.cc)
+target_link_libraries(backup_example
+  ${ROCKSDB_LIB})
+
 add_executable(column_families_example
   column_families_example.cc)
 target_link_libraries(column_families_example
